@@ -1,0 +1,17 @@
+{
+  "name": "pdrazewskie_codeceptjs",
+  "version": "1.0.0",
+  "description": "End to end tests with JS",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "dateformat": "^1.0.12",
+    "faker": "^3.1.0",
+    "include": "^1.1.0",
+    "install": "^0.8.2",
+    "mkdirp": "^0.5.1",
+    "npm": "^3.10.9",
+    "requireg": "^0.1.6"
+  }
+}

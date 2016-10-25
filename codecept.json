@@ -1,0 +1,16 @@
+{
+  "tests": "tests/**/*_test.js",
+  "timeout": 100,
+  "output": "./output",
+  "helpers": {
+    "Nightmare": {
+      "show": true
+    }
+  },
+  "include": {
+    "I": "./steps_file.js"
+  },
+  "bootstrap": false,
+  "mocha": {},
+  "name": "tests"
+}
