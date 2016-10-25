@@ -49,6 +49,33 @@ By default tests run with 6 diffrent screen res.
 // +16px for scrollbar [1980, 1280, 1024, 750, 380, 320]
 sizes = [1996, 1296, 1040, 766, 396, 336];
 ```
+To fix "resize browser" bug, change body inside resizeWindow function 
+
+file
+
+```
+globaly installed node_modules/codeceptjs/lib/helper/Nightmare.js
+```
+
+from
+
+```
+resizeWindow(width, height) {
+	if (width === 'maximize') {
+	  return this.browser.manage().window().maximize();
+	}
+	return this.browser.manage().window().setSize(width, height);
+}
+```
+
+to 
+
+```
+resizeWindow(width, height) {
+	this.browser.viewport(width, height);
+}
+```
+
 
 ### Example
 
